@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Curso C# - Aulas - Ex"
+    "\\Curso C# - Aulas - Ex",
+    "\\Curso C# - Aulas - Ex\\Estoque",
+    "\\Curso C# - Aulas - Ex\\ProdutoEstoque\\PordutoEstoque",
+    "\\Curso C# - Aulas - Ex\\ProdutoEstoque\\PordutoEstoque\\PordutoEstoque"
   ],
-  "SelectedNode": "\\game-xadrez-console",
+  "SelectedNode": "\\Curso C# - Aulas - Ex\\ProdutoEstoque",
   "PreviewInSolutionExplorer": false
 }
