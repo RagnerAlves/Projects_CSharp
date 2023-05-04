@@ -1,0 +1,15 @@
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net7.0\PrimeiroProjeto.exe
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net7.0\PrimeiroProjeto.deps.json
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net7.0\PrimeiroProjeto.runtimeconfig.json
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net7.0\PrimeiroProjeto.dll
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net7.0\PrimeiroProjeto.pdb
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.csproj.AssemblyReference.cache
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.AssemblyInfoInputs.cache
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.AssemblyInfo.cs
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.csproj.CoreCompileInputs.cache
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.dll
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\refint\PrimeiroProjeto.dll
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.pdb
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.genruntimeconfig.cache
+C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\ref\PrimeiroProjeto.dll
