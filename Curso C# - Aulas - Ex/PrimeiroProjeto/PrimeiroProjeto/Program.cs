@@ -42,28 +42,40 @@
 //Console.WriteLine(altura);
 
 
-using System.Globalization;
+//using System.Globalization;
 
-Console.WriteLine("Digite o seu nome completo: ");
-string nome = Console.ReadLine();
-Console.WriteLine("Quantos qurtos tem na sua casa ? ");
-int quartos = int.Parse(Console.ReadLine());
-Console.WriteLine("Entre com o preço do produto: ");
-double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+//Console.WriteLine("Digite o seu nome completo: ");
+//string nome = Console.ReadLine();
+//Console.WriteLine("Quantos qurtos tem na sua casa ? ");
+//int quartos = int.Parse(Console.ReadLine());
+//Console.WriteLine("Entre com o preço do produto: ");
+//double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-Console.WriteLine("Entre com seu último nome, idade e altura (mesma linha)");
-string[] v = Console.ReadLine().Split(' ');
-string nome1 = v[0];
-int idade = int.Parse(v[1]);
-double altura = double.Parse(v[2], CultureInfo.InvariantCulture);
+//Console.WriteLine("Entre com seu último nome, idade e altura (mesma linha)");
+//string[] v = Console.ReadLine().Split(' ');
+//string nome1 = v[0];
+//int idade = int.Parse(v[1]);
+//double altura = double.Parse(v[2], CultureInfo.InvariantCulture);
 
-Console.WriteLine("Você digitou: ");
-Console.WriteLine(nome);
-Console.WriteLine(quartos);
-Console.WriteLine(preco);
-Console.WriteLine(nome1);
-Console.WriteLine(idade);
-Console.WriteLine(altura);
+//Console.WriteLine("Você digitou: ");
+//Console.WriteLine(nome);
+//Console.WriteLine(quartos);
+//Console.WriteLine(preco);
+//Console.WriteLine(nome1);
+//Console.WriteLine(idade);
+//Console.WriteLine(altura);
+
+Console.WriteLine("Digite um numero inteiro para sabermos se é par ou impar: ");
+int num = int.Parse(Console.ReadLine());
+
+if (num % 2 == 0)
+{
+    Console.WriteLine("Número digitado é par");
+} 
+else
+{
+    Console.WriteLine("Número digitado é impar.");
+}
 
 
 Console.ReadKey();
