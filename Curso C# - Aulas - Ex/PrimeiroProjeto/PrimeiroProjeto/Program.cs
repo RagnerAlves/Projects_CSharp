@@ -98,49 +98,83 @@
 
 using System.Globalization;
 
-internal class Program
+//    Console.WriteLine("Favor digite o codigo do item e a quantidade abaixo para o valor total da compra: ");
+
+//    string[] vet = Console.ReadLine().Split(' ');
+//    int cod1 = int.Parse(vet[0]);
+//    int quantidade = int.Parse(vet[1]);
+
+//    double total = 0;
+//    if (cod1 == 1)
+//    {
+//        total = quantidade * 4.0;
+//    }
+//    else if (cod1 == 2)
+//    {
+//        total = quantidade * 4.5;
+//    }
+//    else if (cod1 == 3)
+//    {
+//        total = quantidade * 5.0;
+//    }
+//    else if (cod1 == 4)
+//    {
+//        total = quantidade * 2.0;
+//    }
+//    else if (cod1 == 5)
+//    {
+//        total = quantidade * 1.50;
+//    }
+
+//    Console.WriteLine("Total: R$ " + total.ToString("F2", CultureInfo.InvariantCulture));
+
+//Console.WriteLine("Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem dizendo em qual dos\r\nseguintes intervalos ([0,25], (25,50], (50,75], (75,100]) este valor se encontra: ");
+
+//double numero = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+//if (numero < 0.0 || numero > 100.0)
+//{
+//    Console.WriteLine("Número digitado está fora do intervalo");
+//}
+//else if (numero >= 0.0 && numero <= 25.00)
+//{
+//    Console.WriteLine("Número digitado está entre o intervalo (0,25]");
+//}
+//else if (numero >= 25.0 && numero <= 50.0)
+//{
+//    Console.WriteLine("Número digitado está no intervalo (25, 50]");
+//}
+//else if (numero >= 50.00 && numero <= 75)
+//{
+//    Console.WriteLine("Número digitado está no intervalo (50, 75]");
+//}
+//else if (numero >= 75.00 && numero <= 100)
+//{
+//    Console.WriteLine("Número digitado está no intervalo (75, 100]");
+//}
+
+Console.WriteLine("Digite o valor do salário para saber se é isento ou não de IR: ");
+double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+double imposto;
+if(salario <= 2000.00)
 {
-    private static void Main(string[] args)
-    {
-        Console.WriteLine("Favor digite o codigo do item e a quantidade abaixo para o valor total da compra: ");
-
-        string[] vet = Console.ReadLine().Split(' ');
-        int cod1 = int.Parse(vet[0]);
-        int quantidade = int.Parse(vet[1]);
-
-        double total = 0;
-        if (cod1 == 1)
-        {
-            total = quantidade * 4.0;
-        }
-        else if (cod1 == 2)
-        {
-            total = quantidade * 4.5;
-        }
-        else if (cod1 == 3)
-        {
-            total = quantidade * 5.0;
-        }
-        else if (cod1 == 4)
-        {
-            total = quantidade * 2.0;
-        }
-        else if (cod1 == 5)
-        {
-            total = quantidade * 1.50;
-        }
-        
-        Console.WriteLine("Total: R$ " + total.ToString("F2", CultureInfo.InvariantCulture));
-
-
-        Console.ReadKey();
-    }
+    Console.WriteLine("Trabalhador está isento de pagar o imposto.");
+}
+else if (salario <= 3000.00)
+{
+    imposto = salario * (8 / 100);
+    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
+}
+else if (salario <= 4500.00)
+{
+    imposto = salario * (18 / 100);
+    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
+}
+else if (salario >= 4500.00)
+{
+    imposto = salario * (28 / 100);
+    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
 }
 
-
-
-//string[] vet = Console.ReadLine().Split(' ');
-//int cod1 = int.Parse(vet[0]);
-//int quantidade = int.Parse(vet[1]);
-
-//double total;
+Console.ReadKey();
