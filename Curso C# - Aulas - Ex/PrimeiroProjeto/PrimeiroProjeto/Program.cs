@@ -153,28 +153,64 @@ using System.Globalization;
 //    Console.WriteLine("Número digitado está no intervalo (75, 100]");
 //}
 
-Console.WriteLine("Digite o valor do salário para saber se é isento ou não de IR: ");
-double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+Console.WriteLine("Digite um número inteiro: ");
+int y = int.Parse(Console.ReadLine());
 
-double imposto;
-if(salario <= 2000.00)
-{
-    Console.WriteLine("Trabalhador está isento de pagar o imposto.");
-}
-else if (salario <= 3000.00)
-{
-    imposto = salario * (8 / 100);
-    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
-}
-else if (salario <= 4500.00)
-{
-    imposto = salario * (18 / 100);
-    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
-}
-else if (salario >= 4500.00)
-{
-    imposto = salario * (28 / 100);
-    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
-}
+if (y < 5) Console.WriteLine("Bom dia.");
+
+    //Console.WriteLine("Digite um numero inteiro para sabermos se é par ou impar.");
+    //int x = int.Parse(Console.ReadLine());
+
+
+    //if (x % 2 == 0)
+    //{
+    //    Console.WriteLine("O número digitado é par");
+    //}
+    //else
+    //{
+    //    Console.WriteLine("Número digitado é impar.");
+    //}
+
+
+//    Console.WriteLine("Qual a hora atual? ");
+//int h = int.Parse(Console.ReadLine());
+
+//if (h < 12)
+//{
+//    Console.WriteLine("Bom dia !");
+//}
+//else if (h < 18)
+//{
+//    Console.WriteLine("Boa tarde");
+//}
+//else
+//{
+//    Console.WriteLine("Boa noite.");
+//}
+
+
+//Console.WriteLine("Digite o valor do salário para saber se é isento ou não de IR: ");
+//double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+//double imposto;
+//if(salario <= 2000.00)
+//{
+//    Console.WriteLine("Trabalhador está isento de pagar o imposto.");
+//}
+//else if (salario <= 3000.00)
+//{
+//    imposto = salario * (8 / 100);
+//    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
+//}
+//else if (salario <= 4500.00)
+//{
+//    imposto = salario * (18 / 100);
+//    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
+//}
+//else if (salario >= 4500.00)
+//{
+//    imposto = salario * (28 / 100);
+//    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
+//}
 
 Console.ReadKey();
