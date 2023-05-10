@@ -153,23 +153,23 @@ using System.Globalization;
 //    Console.WriteLine("Número digitado está no intervalo (75, 100]");
 //}
 
-Console.WriteLine("Digite um número inteiro: ");
-int y = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite um número inteiro: ");
+//int y = int.Parse(Console.ReadLine());
 
-if (y < 5) Console.WriteLine("Bom dia.");
+//if (y < 5) Console.WriteLine("Bom dia.");
 
-    //Console.WriteLine("Digite um numero inteiro para sabermos se é par ou impar.");
-    //int x = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite um numero inteiro para sabermos se é par ou impar.");
+//int x = int.Parse(Console.ReadLine());
 
 
-    //if (x % 2 == 0)
-    //{
-    //    Console.WriteLine("O número digitado é par");
-    //}
-    //else
-    //{
-    //    Console.WriteLine("Número digitado é impar.");
-    //}
+//if (x % 2 == 0)
+//{
+//    Console.WriteLine("O número digitado é par");
+//}
+//else
+//{
+//    Console.WriteLine("Número digitado é impar.");
+//}
 
 
 //    Console.WriteLine("Qual a hora atual? ");
@@ -212,5 +212,40 @@ if (y < 5) Console.WriteLine("Bom dia.");
 //    imposto = salario * (28 / 100);
 //    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
 //}
+
+Console.WriteLine("Digite trê número inteiros para sabermos qual é o maior: ");
+int num1 = int.Parse(Console.ReadLine());
+int num2 = int.Parse(Console.ReadLine());
+int num3 = int.Parse(Console.ReadLine());
+
+
+if (num1 > num2 && num1 > num3)
+{
+    Console.WriteLine("Primeiro número digitado é o maior");
+}
+else if (num2 > num1 && num2 > num3)
+{
+    Console.WriteLine("Segundo número digitado é o maior");
+}
+else if (num3 > num2 && num3 > num1)
+{
+    Console.WriteLine("Terceiro número digitado é o maior");
+}
+else if (num1 == num2)
+{
+    Console.WriteLine("O primeiro valor digitado é igual ao segundo");
+}
+else if (num1 == num3)
+{
+    Console.WriteLine("O primeiro valor digitado é igual ao terceiro");
+}
+else if (num2 == num3)
+{
+    Console.WriteLine("O segundo valor digitado é igual ao terceiro");
+}
+else
+{
+    Console.WriteLine("Todos os valores digitados são iguais.")
+}
 
 Console.ReadKey();
