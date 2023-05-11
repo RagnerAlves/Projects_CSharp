@@ -252,5 +252,42 @@ using System.Net;
 //    Console.WriteLine("Numeros digitados não são multiplos entre si");
 //}
 
+Console.WriteLine("Digite três números inteiros para sabermos qual o maior entre eles: ");
+Console.WriteLine("Digite o primeiro valor :");
+int num1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Digite o segundo valor: ");
+int num2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Digite o terceiro valor: ");
+int num3 = int.Parse(Console.ReadLine());
+
+if (num1 > num2 && num1 > num3)
+{
+    Console.WriteLine("O primeiro valor é o maior.");
+}
+else if (num2 > num3 && num2 > num1)
+{
+    Console.WriteLine("O segundo valor é o maior.");
+}
+else if (num1 == num2 && num1 == num3)
+{
+    Console.WriteLine("Os valores digitados são iguais.");
+}
+else if (num1 == num2)
+{
+    Console.WriteLine("O primeiro e o segundo valor digitados são iguais.");
+}
+else if (num1 == num3)
+{
+    Console.WriteLine("O primeiro e o terceiro valor digitados são iguais.");
+}
+else if (num2 == num3)
+{
+    Console.WriteLine("O segundo e o terceiro valor digitados são iguais.");
+}
+else
+{
+    Console.WriteLine("O terceiro valor é o maior");
+}
+
 
 Console.ReadKey();
