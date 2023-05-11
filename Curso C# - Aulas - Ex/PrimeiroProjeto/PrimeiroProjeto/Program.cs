@@ -97,6 +97,7 @@
 //exercicio03
 
 using System.Globalization;
+using System.Net;
 
 //    Console.WriteLine("Favor digite o codigo do item e a quantidade abaixo para o valor total da compra: ");
 
@@ -153,26 +154,26 @@ using System.Globalization;
 //    Console.WriteLine("Número digitado está no intervalo (75, 100]");
 //}
 
-Console.WriteLine("Digite um número inteiro: ");
-int y = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite um número inteiro: ");
+//int y = int.Parse(Console.ReadLine());
 
-if (y < 5) Console.WriteLine("Bom dia.");
+//if (y < 5) Console.WriteLine("Bom dia.");
 
-    //Console.WriteLine("Digite um numero inteiro para sabermos se é par ou impar.");
-    //int x = int.Parse(Console.ReadLine());
-
-
-    //if (x % 2 == 0)
-    //{
-    //    Console.WriteLine("O número digitado é par");
-    //}
-    //else
-    //{
-    //    Console.WriteLine("Número digitado é impar.");
-    //}
+//Console.WriteLine("Digite um numero inteiro para sabermos se é par ou impar.");
+//int x = int.Parse(Console.ReadLine());
 
 
-//    Console.WriteLine("Qual a hora atual? ");
+//if (x % 2 == 0)
+//{
+//    Console.WriteLine("O número digitado é par");
+//}
+//else
+//{
+//    Console.WriteLine("Número digitado é impar.");
+//}
+
+
+//Console.WriteLine("Qual a hora atual? ");
 //int h = int.Parse(Console.ReadLine());
 
 //if (h < 12)
@@ -212,5 +213,44 @@ if (y < 5) Console.WriteLine("Bom dia.");
 //    imposto = salario * (28 / 100);
 //    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
 //}
+
+//Console.WriteLine("Digite um numero inteiro: ");
+//int num = int.Parse(Console.ReadLine());
+
+//if (num > 0)
+//{
+//    Console.WriteLine("Número digitado é positivo");
+//}
+//else
+//{
+//    Console.WriteLine("Número digitado é negativo");
+//}
+
+//Console.WriteLine("Digite um número inteiro para saber se ele é par ou impar: ");
+//int num = int.Parse(Console.ReadLine());
+
+//if (num % 2 == 0)
+//{
+//    Console.WriteLine("Número digitado é par.");
+//}
+//else
+//{
+//    Console.WriteLine("Número digitado é impar.");
+//}
+
+//Console.WriteLine("Digite dois valores para sabermos se são multiplos entre si: ");
+//string[] vet = Console.ReadLine().Split(' ');
+//int num1 = int.Parse(vet[0]);
+//int num2 = int.Parse(vet[1]);
+
+//if (num1 % num2 == 0 || num2 % num1 == 0)
+//{
+//    Console.WriteLine("Numeros digitados são multiplos entre si");
+//}
+//else
+//{
+//    Console.WriteLine("Numeros digitados não são multiplos entre si");
+//}
+
 
 Console.ReadKey();
