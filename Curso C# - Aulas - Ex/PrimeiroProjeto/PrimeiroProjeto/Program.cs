@@ -97,6 +97,7 @@
 //exercicio03
 
 using System.Globalization;
+using System.Net;
 
 //    Console.WriteLine("Favor digite o codigo do item e a quantidade abaixo para o valor total da compra: ");
 
@@ -172,7 +173,7 @@ using System.Globalization;
 //}
 
 
-//    Console.WriteLine("Qual a hora atual? ");
+//Console.WriteLine("Qual a hora atual? ");
 //int h = int.Parse(Console.ReadLine());
 
 //if (h < 12)
@@ -213,39 +214,80 @@ using System.Globalization;
 //    Console.WriteLine("O valor do imposto a ser pago é de " + imposto);
 //}
 
-Console.WriteLine("Digite trê número inteiros para sabermos qual é o maior: ");
-int num1 = int.Parse(Console.ReadLine());
-int num2 = int.Parse(Console.ReadLine());
-int num3 = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite um numero inteiro: ");
+//int num = int.Parse(Console.ReadLine());
 
+//if (num > 0)
+//{
+//    Console.WriteLine("Número digitado é positivo");
+//}
+//else
+//{
+//    Console.WriteLine("Número digitado é negativo");
+//}
+
+//Console.WriteLine("Digite um número inteiro para saber se ele é par ou impar: ");
+//int num = int.Parse(Console.ReadLine());
+
+//if (num % 2 == 0)
+//{
+//    Console.WriteLine("Número digitado é par.");
+//}
+//else
+//{
+//    Console.WriteLine("Número digitado é impar.");
+//}
+
+//Console.WriteLine("Digite dois valores para sabermos se são multiplos entre si: ");
+//string[] vet = Console.ReadLine().Split(' ');
+//int num1 = int.Parse(vet[0]);
+//int num2 = int.Parse(vet[1]);
+
+//if (num1 % num2 == 0 || num2 % num1 == 0)
+//{
+//    Console.WriteLine("Numeros digitados são multiplos entre si");
+//}
+//else
+//{
+//    Console.WriteLine("Numeros digitados não são multiplos entre si");
+//}
+
+Console.WriteLine("Digite três números inteiros para sabermos qual o maior entre eles: ");
+Console.WriteLine("Digite o primeiro valor :");
+int num1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Digite o segundo valor: ");
+int num2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Digite o terceiro valor: ");
+int num3 = int.Parse(Console.ReadLine());
 
 if (num1 > num2 && num1 > num3)
 {
-    Console.WriteLine("Primeiro número digitado é o maior");
+    Console.WriteLine("O primeiro valor é o maior.");
 }
-else if (num2 > num1 && num2 > num3)
+else if (num2 > num3 && num2 > num1)
 {
-    Console.WriteLine("Segundo número digitado é o maior");
+    Console.WriteLine("O segundo valor é o maior.");
 }
-else if (num3 > num2 && num3 > num1)
+else if (num1 == num2 && num1 == num3)
 {
-    Console.WriteLine("Terceiro número digitado é o maior");
+    Console.WriteLine("Os valores digitados são iguais.");
 }
 else if (num1 == num2)
 {
-    Console.WriteLine("O primeiro valor digitado é igual ao segundo");
+    Console.WriteLine("O primeiro e o segundo valor digitados são iguais.");
 }
 else if (num1 == num3)
 {
-    Console.WriteLine("O primeiro valor digitado é igual ao terceiro");
+    Console.WriteLine("O primeiro e o terceiro valor digitados são iguais.");
 }
 else if (num2 == num3)
 {
-    Console.WriteLine("O segundo valor digitado é igual ao terceiro");
+    Console.WriteLine("O segundo e o terceiro valor digitados são iguais.");
 }
 else
 {
-    Console.WriteLine("Todos os valores digitados são iguais.")
+    Console.WriteLine("O terceiro valor é o maior");
 }
+
 
 Console.ReadKey();
