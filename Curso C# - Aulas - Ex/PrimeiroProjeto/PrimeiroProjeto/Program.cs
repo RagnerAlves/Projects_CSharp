@@ -264,7 +264,7 @@ if (num1 > num2 && num1 > num3)
 {
     Console.WriteLine("O primeiro valor é o maior.");
 }
-else if (num2 > num3 && num2 > num1)
+else if (num2 > num3)
 {
     Console.WriteLine("O segundo valor é o maior.");
 }
