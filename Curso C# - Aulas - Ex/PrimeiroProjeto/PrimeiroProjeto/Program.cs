@@ -97,7 +97,7 @@
 //exercicio03
 
 using System.Globalization;
-using System.Net;
+//using System.Net;
 
 //    Console.WriteLine("Favor digite o codigo do item e a quantidade abaixo para o valor total da compra: ");
 
@@ -252,65 +252,79 @@ using System.Net;
 //    Console.WriteLine("Numeros digitados não são multiplos entre si");
 //}
 
-Console.WriteLine("Digite três números inteiros para sabermos qual o maior entre eles: ");
-Console.WriteLine("Digite o primeiro valor :");
-int num1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Digite o segundo valor: ");
-int num2 = int.Parse(Console.ReadLine());
-Console.WriteLine("Digite o terceiro valor: ");
-int num3 = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite três números inteiros para sabermos qual o maior entre eles: ");
+//Console.WriteLine("Digite o primeiro valor :");
+//int num1 = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite o segundo valor: ");
+//int num2 = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite o terceiro valor: ");
+//int num3 = int.Parse(Console.ReadLine());
 
-double resultado = Maior(num1, num2, num3);
-double igual = Igual(num1, num2, num3);
+//double resultado = Maior(num1, num2, num3);
+//double igual = Igual(num1, num2, num3);
 
-Console.WriteLine("Maior valor digitado é: " + resultado);
+//Console.WriteLine("Maior valor digitado é: " + resultado);
 
-Console.WriteLine("Os valores digitados iguais são: " + igual);
+//Console.WriteLine("Os valores digitados iguais são: " + igual);
 
-static int Maior(int num1, int num2, int num3)
+//static int Maior(int num1, int num2, int num3)
+//{
+//    int m;
+//    if (num1 > num2 && num1 > num3)
+//    {
+//        m = num1;
+//        Console.WriteLine("O primeiro valor é o maior.");
+//    }
+//    else if (num2 > num3)
+//    {
+//        m = num2;
+//        Console.WriteLine("O segundo valor é o maior.");
+//    }
+//    else
+//    {
+//        m = num3;
+//        Console.WriteLine("O terceiro valor é o maior");
+//    }
+//    return m;
+//}
+
+//static int Igual(int num1, int num2, int num3)
+//{   
+//    int k;
+//    if (num1 == num2 && num1 == num3)
+//    {   
+//        k = num1;
+//        Console.WriteLine("Os valores digitados são iguais.");
+//    }
+//    else if (num1 == num2)
+//    {   
+//        k = num2;
+//        Console.WriteLine("O primeiro e o segundo valor digitados são iguais.");
+//    }
+//    else if (num1 == num3)    
+//    {   
+//        k = num3;
+//        Console.WriteLine("O primeiro e o terceiro valor digitados são iguais.");
+//    }
+//    else if (num2 == num3)
+//    {   
+//        k = num3;
+//        Console.WriteLine("O segundo e o terceiro valor digitados são iguais.");
+//    }
+//    return k;
+//}
+
+Console.WriteLine("Digite um número: ");
+double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+while (x > 0.0)
 {
-    int m;
-    if (num1 > num2 && num1 > num3)
-    {
-        m = num1;
-        Console.WriteLine("O primeiro valor é o maior.");
-    }
-    else if (num2 > num3)
-    {
-        m = num2;
-        Console.WriteLine("O segundo valor é o maior.");
-    }
-    else
-    {
-        m = num3;
-        Console.WriteLine("O terceiro valor é o maior");
-    }
-    return m;
+    double raiz = Math.Sqrt(x);
+    Console.WriteLine(raiz.ToString(), CultureInfo.InvariantCulture);
+    Console.WriteLine("Digite outro número: ");
+    x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 }
 
-static int Igual(int num1, int num2, int num3)
-{   
-    int k;
-    if (num1 == num2 && num1 == num3)
-    {   
-        k = num1;
-        Console.WriteLine("Os valores digitados são iguais.");
-    }
-    else if (num1 == num2)
-    {   
-        k = num2;
-        Console.WriteLine("O primeiro e o segundo valor digitados são iguais.");
-    }
-    else if (num1 == num3)    
-    {   
-        k = num3;
-        Console.WriteLine("O primeiro e o terceiro valor digitados são iguais.");
-    }
-    else if (num2 == num3)
-    {   
-        k = num3;
-        Console.WriteLine("O segundo e o terceiro valor digitados são iguais.");
-    }
-    return k;
-}
+Console.WriteLine("Número negativo.");
+
 Console.ReadKey();
