@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\obj"
+    "\\obj",
+    "\\obj\\Debug"
   ],
   "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
