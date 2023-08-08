@@ -1,5 +1,6 @@
-﻿using System.Globalization;
-using System.Xml.Schema;
+﻿using System;
+using System.Globalization;
+
 
 //string frase = Console.ReadLine();
 //string x = Console.ReadLine();
@@ -202,30 +203,128 @@ using System.Xml.Schema;
 //    Console.WriteLine("O intervalo digitado é (75,100]");
 //}
 
-Console.WriteLine("Digite o valor do salário de um trabalhador para saber o % de imposto a ser pago: ");
-double salario = double.Parse(Console.ReadLine());
+//Console.WriteLine("Digite o valor do salário de um trabalhador para saber o % de imposto a ser pago: ");
+//double salario = double.Parse(Console.ReadLine());
 
-double imposto = 0.0;
+//double imposto;
 
-if (salario <= 2000.00)
-{
-    Console.WriteLine("Trabalhador é isento de pagar imposto");
-}
-else if (salario < 2000.01)
-{
-    imposto = salario * (8 / 100);
-    Console.WriteLine("O percentual de imposto a ser pago é: 8%, valor do salario com desconto é: " + imposto);
-}
-else if (salario <= 3000.01)
-{
-    imposto = salario * (18 / 100);
-    Console.WriteLine("O percentual de imposto a ser pago é: 18%, valor do salario com desconto é: " + imposto);
-}
-else if (salario >= 4500.00)
-{
-    imposto = salario * (28 / 100);
-    Console.WriteLine("O percentual de imposto a ser pago é: 28%, valor do salario com desconto é: " + imposto);
-}
+//if (salario <= 2000.00)
+//{
+//    imposto = 0.0;
+//    Console.WriteLine("Trabalhador é isento de pagar imposto");
+//}
+//else if (salario < 3000.00)
+//{
+//    imposto = (salario - 2000.0) * 0.08;
+//    Console.WriteLine("O valor de imposto a ser pago é: 8%, valor do salario com desconto é: " + imposto);
+//}
+//else if (salario <= 4500.00)
+//{
+//    imposto = (salario - 3000.0) * 0.18 + 1000.0 * 0.08;
+//    Console.WriteLine("O valor de imposto a ser pago é: 18%, valor do salario com desconto é: " + imposto);
+//}
+//else
+//{
+//    imposto = (salario - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
+//    Console.WriteLine("O valor de imposto a ser pago é: 28%, valor do salario com desconto é: " + imposto);
+//}
+//if (imposto == 0.0)
+//{
+//    Console.WriteLine("Isento");
+//}
+//else
+//{
+//    Console.WriteLine("R$ " + imposto.ToString("F2", CultureInfo.InvariantCulture));
+//}
+
+//Console.WriteLine("Digitre três números para sabermos qual é o maior: ");
+//int num1 = int.Parse(Console.ReadLine());
+//int num2 = int.Parse(Console.ReadLine());
+//int num3 = int.Parse(Console.ReadLine());
+
+//double resultado = Maior(num1, num2, num3);
+
+//Console.WriteLine("Maior valor digitado é: " + resultado);
+
+
+//static int Maior(int a, int b, int c)
+//{
+//    int maior;
+//    if (a > b && a > c)
+//    {
+//        maior = a;
+//    }
+//    else if (b > c)
+//    {
+//        maior = b;
+//    }
+//    else
+//    {
+//        maior = c;
+//    }
+
+//    return maior;
+//}
+
+//Console.WriteLine("Ditie um nmúmero: ");
+//double num1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+//while (num1 >= 0.0)
+
+//{
+//    double raiz = Math.Sqrt(num1);
+//    Console.WriteLine(raiz.ToString("F3", CultureInfo.InvariantCulture));
+//    Console.Write("Digite outro número: ");
+//    num1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+//}
+
+//Console.WriteLine("Número negativo.");
+
+//Console.WriteLine("Digite a senha de 4 digitos correta para ter o acesso permitido: ");
+
+//int senha = int.Parse(Console.ReadLine());
+
+//while (senha != 2002)
+//{
+//    Console.WriteLine("Senha inválida.");
+//    senha  = int.Parse(Console.ReadLine());
+//}
+
+//Console.WriteLine("Senha correta, acesso permitido.");
+
+
+//Console.WriteLine("Digite o codigo de qual combustivbel deseja abastecer: 1 Alcool - 2 Gaolina - 3 Diesel");
+
+//int alcool = int.Parse(Console.ReadLine());
+//int gasolina = int.Parse(Console.ReadLine());
+//int diesel = int.Parse(Console.ReadLine());
+
+//int tipo = int.Parse(Console.ReadLine());
+
+//while(tipo != 4)
+//{
+//    if (tipo == 1)
+//    {
+//        alcool = alcool + 1;
+//    }
+//    else if (tipo == 2)
+//    {
+//        gasolina = gasolina + 1;
+//    }
+//    else
+//    {
+//        diesel = diesel + 1 ;
+//    }
+
+//    tipo = int.Parse(Console.ReadLine());
+//}
+
+//Console.WriteLine("Muito Obrigado !!");
+//Console.WriteLine("Alcool: " + alcool);
+//Console.WriteLine("Gasolina: " + gasolina);
+//Console.WriteLine("Diesel: " + diesel);
+
+
 
 Console.ReadKey();
 
