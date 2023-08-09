@@ -338,7 +338,7 @@ using System.Globalization;
 
 //Console.WriteLine("Soma doa valores é de:  " + soma);
 
-//Console.WriteLine("Digite um valor intero para saber o número de valore simpares entre ele: ");
+//Console.WriteLine("Digite um valor intero para saber o número de valore impares entre ele: ");
 //int num1 = int.Parse(Console.ReadLine());
 
 //for(int i = 1;  i <= num1; i++)
@@ -349,29 +349,136 @@ using System.Globalization;
 //    }
 //}
 
-Console.WriteLine("Digite um valor inteiro: ");
-int num1 = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite um valor inteiro: ");
+//int num1 = int.Parse(Console.ReadLine());
 
-int dentroIntervalo = 0;
-int foraIntervalo = 0;
+//int dentroIntervalo = 0;
+//int foraIntervalo = 0;
 
-for(int i = 0; i < num1; i++)
-{
-    Console.WriteLine("Digite um valor: ");
-    int valor = int.Parse(Console.ReadLine());
+//for(int i = 0; i < num1; i++)
+//{
+//    Console.WriteLine("Digite um valor: ");
+//    int valor = int.Parse(Console.ReadLine());
 
-    if (valor >= 10.00  && valor <= 20.00)
-    {
-        dentroIntervalo += valor; 
-    }
-    else
-    {
-        foraIntervalo += valor;
-    }
+//    if (valor >= 10.00  && valor <= 20.00)
+//    {
+//        dentroIntervalo += valor; 
+//    }
+//    else
+//    {
+//        foraIntervalo += valor;
+//    }
 
-    Console.WriteLine("Foram digitados: " + dentroIntervalo + " numeros.");
-    Console.WriteLine("Foram digitados: " + foraIntervalo + " numeros.");
-}
+//    Console.WriteLine("Foram digitados: " + dentroIntervalo + " numeros.");
+//    Console.WriteLine("Foram digitados: " + foraIntervalo + " numeros.");
+//}
+
+//Console.WriteLine("Digite um valor: ");
+//int num1 = int.Parse(Console.ReadLine());
+
+//for(int i = 0; i < num1; i++)
+//{
+//    string[] valor = Console.ReadLine().Split(' ');
+//    int num2 = int.Parse(valor[0]);
+//    int num3 = int.Parse(valor[1]);
+//    int num4 = int.Parse(valor[2]);
+
+//    double media = (num2 * 2 + num3 * 3 + num4 * 5) / 10;
+
+//    Console.WriteLine(media.ToString("F2", CultureInfo.InvariantCulture));
+//}
+
+//Console.WriteLine("Digite um número: ");
+//int num1 = int.Parse(Console.ReadLine());
+
+//for(int i = 0; i < num1; i++)
+//{
+//    string[] pares = Console.ReadLine().Split(' ');
+//    int num2 = int.Parse(pares[0]);
+//    int num3 = int.Parse(pares[1]);
+
+//    if (num3 == 0)
+//    {
+//        Console.WriteLine("Divisão impossível.");
+//    }
+//    else
+//    {
+//        double divisao = num2 / num3;
+//        Console.WriteLine(divisao~.ToString("F1", CultureInfo.InvariantCulture);
+//    }
+//}
+
+//Console.WriteLine("Digite um número: ");
+//int num1 = int.Parse(Console.ReadLine());
+
+//int fatorial = 1;
+
+//for(int i = 1; i <= num1; i++)
+//{
+//    fatorial = fatorial * i;
+//}
+
+//Console.WriteLine("Fatorial do número digitado é: " + fatorial);
+
+//Console.WriteLine("Digite um valor para sabermos seus divisores: ");
+//int num1 = int.Parse(Console.ReadLine());
+
+//for (int i = 1; i <= num1; i++)
+//{
+//    if (num1 % i == 0)
+//    {
+//        Console.WriteLine(i);
+//    }
+//}
+
+//Console.WriteLine("Digite um número: ");
+//int num1 = int.Parse(Console.ReadLine());
+
+//for(int i = 1; i <= num1; i++)
+//{
+//    int primeiro = i;
+//    int segundo = i * i;
+//    int terceiro = i * i * i;
+
+//    Console.WriteLine(primeiro + ", " + segundo + ", " + terceiro);
+//}
+
+//Console.WriteLine("Digite numero para sabermos quantos números impares entre ele: ");
+//int num1 = int.Parse(Console.ReadLine());
+
+//int cont = 0;
+
+//for (int i = 1; i <= num1; i++)
+//{
+//    if (i % 2 != 0)
+//    {
+//        Console.WriteLine(i);
+//    }
+//}
+
+//Console.WriteLine("Digite um valor: ");
+//int num1 = int.Parse(Console.ReadLine());
+
+//int dentroIntervalo = 0;
+//int foraIntervalo = 0;
+
+//for (int i = 0; i < num1; i++)
+//{
+//    Console.Write("Digite um número: ");
+//    int num2 = int.Parse(Console.ReadLine());
+
+//    if (num2 >= 10.00 && num2 <= 20.00)
+//    {
+//        dentroIntervalo++;
+//    }
+//    else
+//    {
+//        foraIntervalo++;
+//    }
+//}
+
+//Console.WriteLine("Os números digitados que estão dentro do intervalo são: " + dentroIntervalo);
+//Console.WriteLine("Os números digitados que estão fora do intervalo são: " + foraIntervalo);
 
 Console.ReadKey();
 
