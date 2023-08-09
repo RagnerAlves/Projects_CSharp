@@ -324,7 +324,54 @@ using System.Globalization;
 //Console.WriteLine("Gasolina: " + gasolina);
 //Console.WriteLine("Diesel: " + diesel);
 
+//Console.Write("Quantos números inteiros você vai digitar ? ");
+//int num1 = int.Parse(Console.ReadLine());
 
+//int soma = 0;
+
+//for (int i = 1; i <= num1; i++)
+//{
+//Console.Write("Digite um valor #{0}: ", i);
+//int valor = int.Parse(Console.ReadLine());
+//soma += valor;
+//}
+
+//Console.WriteLine("Soma doa valores é de:  " + soma);
+
+//Console.WriteLine("Digite um valor intero para saber o número de valore simpares entre ele: ");
+//int num1 = int.Parse(Console.ReadLine());
+
+//for(int i = 1;  i <= num1; i++)
+//{
+//    if(i % 2 != 0)
+//    {
+//        Console.Write(i);
+//    }
+//}
+
+Console.WriteLine("Digite um valor inteiro: ");
+int num1 = int.Parse(Console.ReadLine());
+
+int dentroIntervalo = 0;
+int foraIntervalo = 0;
+
+for(int i = 0; i < num1; i++)
+{
+    Console.WriteLine("Digite um valor: ");
+    int valor = int.Parse(Console.ReadLine());
+
+    if (valor >= 10.00  && valor <= 20.00)
+    {
+        dentroIntervalo += valor; 
+    }
+    else
+    {
+        foraIntervalo += valor;
+    }
+
+    Console.WriteLine("Foram digitados: " + dentroIntervalo + " numeros.");
+    Console.WriteLine("Foram digitados: " + foraIntervalo + " numeros.");
+}
 
 Console.ReadKey();
 
