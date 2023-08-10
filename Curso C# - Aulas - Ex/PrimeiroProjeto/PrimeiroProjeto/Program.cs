@@ -446,8 +446,6 @@ using System.Globalization;
 //Console.WriteLine("Digite numero para sabermos quantos números impares entre ele: ");
 //int num1 = int.Parse(Console.ReadLine());
 
-//int cont = 0;
-
 //for (int i = 1; i <= num1; i++)
 //{
 //    if (i % 2 != 0)
@@ -479,6 +477,47 @@ using System.Globalization;
 
 //Console.WriteLine("Os números digitados que estão dentro do intervalo são: " + dentroIntervalo);
 //Console.WriteLine("Os números digitados que estão fora do intervalo são: " + foraIntervalo);
+
+//Console.WriteLine("Digite um número: ");
+//int num1 = int.Parse(Console.ReadLine());
+
+//for (int i = 0; i < num1; i++)
+//{
+//    //Console.WriteLine("Digite o primeiro valor para sabermos se é possivel a divisão pelo segundo: ");
+//    string[] pares = Console.ReadLine().Split(' ');
+//    int num2 = int.Parse(pares[0]);
+//    int num3 = int.Parse(pares[1]);
+
+//    if (num3 == 0)
+//    {
+//        Console.WriteLine("Divisão impossível.");
+//    }
+//    else
+//    {
+//        double divisao = (double)num2 / num3;
+//        Console.WriteLine("O resultado da divisão é: " + divisao);
+//    }
+//}
+
+
+int n = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < n; i++)
+{
+    string[] line = Console.ReadLine().Split(' ');
+    int x = int.Parse(line[0]);
+    int y = int.Parse(line[1]);
+
+    if (y == 0)
+    {
+        Console.WriteLine("divisao impossivel");
+    }
+    else
+    {
+        double div = (double)x / y;
+        Console.WriteLine(div.ToString("F1", CultureInfo.InvariantCulture));
+    }
+}
 
 Console.ReadKey();
 
