@@ -18,7 +18,6 @@ C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProje
 C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net7.0\PrimeiroProjeto.runtimeconfig.json
 C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net7.0\PrimeiroProjeto.dll
 C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\net7.0\PrimeiroProjeto.pdb
-C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.csproj.AssemblyReference.cache
 C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.AssemblyInfoInputs.cache
 C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net7.0\PrimeiroProjeto.AssemblyInfo.cs
