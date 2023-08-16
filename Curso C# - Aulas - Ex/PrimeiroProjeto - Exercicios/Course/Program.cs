@@ -529,20 +529,20 @@ namespace Course
             y = new Triangulo();
 
             Console.WriteLine("Digite as medidas do triangulo X: ");
-            double xA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            double xB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            double xC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("Digite as medidas do triangulo Y: ");
-            double yA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            double yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            double yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double p = (xA + xB + xC) / 2.0;
-            double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
+            double p = (x.A + x.B + x.C) / 2.0;
+            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
 
-            p = (yA + yB + yC) / 2.0;
-            double areaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - yC)); ;
+            p = (y.A + y.B + y.C) / 2.0;
+            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C)); ;
 
             Console.WriteLine("Valor da área de X: " + areaX.ToString("F4", CultureInfo.InvariantCulture));
             Console.WriteLine("Valor da área de Y: " + areaY.ToString("F4", CultureInfo.InvariantCulture));

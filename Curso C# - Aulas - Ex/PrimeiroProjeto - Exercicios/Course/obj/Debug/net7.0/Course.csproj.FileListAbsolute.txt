@@ -1,0 +1,14 @@
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\bin\Debug\net7.0\Course.exe
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\bin\Debug\net7.0\Course.deps.json
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\bin\Debug\net7.0\Course.runtimeconfig.json
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\bin\Debug\net7.0\Course.dll
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\bin\Debug\net7.0\Course.pdb
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\obj\Debug\net7.0\Course.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\obj\Debug\net7.0\Course.AssemblyInfoInputs.cache
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\obj\Debug\net7.0\Course.AssemblyInfo.cs
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\obj\Debug\net7.0\Course.csproj.CoreCompileInputs.cache
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\obj\Debug\net7.0\Course.dll
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\obj\Debug\net7.0\refint\Course.dll
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\obj\Debug\net7.0\Course.pdb
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\obj\Debug\net7.0\Course.genruntimeconfig.cache
+C:\Users\ragne\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\PrimeiroProjeto - Exercicios\Course\obj\Debug\net7.0\ref\Course.dll
