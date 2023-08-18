@@ -524,42 +524,77 @@ namespace Course
             //    }
             //}
 
-            Triangulo x, y;
-            x = new Triangulo();
-            y = new Triangulo();
+            //Triangulo x, y;
+            //x = new Triangulo();
+            //y = new Triangulo();
 
-            Console.WriteLine("Digite as medidas do triangulo X: ");
-            x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Digite as medidas do triangulo X: ");
+            //x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.WriteLine("Digite as medidas do triangulo Y: ");
-            y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Digite as medidas do triangulo Y: ");
+            //y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double p = (x.A + x.B + x.C) / 2.0;
-            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+            //double p = (x.A + x.B + x.C) / 2.0;
+            //double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
 
-            p = (y.A + y.B + y.C) / 2.0;
-            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C)); ;
+            //p = (y.A + y.B + y.C) / 2.0;
+            //double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C)); ;
 
-            Console.WriteLine("Valor da área de X: " + areaX.ToString("F4", CultureInfo.InvariantCulture));
-            Console.WriteLine("Valor da área de Y: " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+            //Console.WriteLine("Valor da área de X: " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+            //Console.WriteLine("Valor da área de Y: " + areaY.ToString("F4", CultureInfo.InvariantCulture));
 
-            if (areaX > areaY)
-            {
-                Console.WriteLine("A maior area é a área X");
-            }
-            else
-            {
-                Console.WriteLine("A maior área é a área Y");
-            }
+            //if (areaX > areaY)
+            //{
+            //    Console.WriteLine("A maior area é a área X");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("A maior área é a área Y");
+            //}
 
+            //Pessoa p1, p2;
+            //p1 = new Pessoa();
+            //p2 = new Pessoa();
+
+            //Console.WriteLine("Digite o nome e idade da primeira pessoa: ");
+            //p1.Nome = Console.ReadLine();
+            //p1.Idade = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite o nome e idade da segunda pessoa: ");
+            //p2.Nome = Console.ReadLine();
+            //p2.Idade = int.Parse(Console.ReadLine());
+
+            //if (p1.Idade > p2.Idade)
+            //{
+            //    Console.WriteLine("A pessoa mais velha é: " + p1.Nome);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("A pessoa mais velha é: " + p2.Nome);
+            //}
+
+            //Pagamento f1, f2;
+            //f1 = new Pagamento();
+            //f2 = new Pagamento();
+
+            //Console.WriteLine("Digite o nome e salario do primeiro funcionario: ");
+            //f1.Nome = Console.ReadLine();
+            //f1.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            //Console.WriteLine();
+
+            //Console.WriteLine("Digite o nome e salario do segundo funcionario: ");
+            //f2.Nome = Console.ReadLine();
+            //f2.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            //double mediaSalario = (f1.Salario + f2.Salario) / 2;
+
+            //Console.WriteLine("Salario medio é de: " + mediaSalario.ToString("F4", CultureInfo.InvariantCulture));
 
             Console.ReadKey();
-
-
         }
     }
 }
