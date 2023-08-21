@@ -619,6 +619,66 @@ namespace Course
             //qte = int.Parse(Console.ReadLine());
             //p.RemoverProdutos(qte);
 
+            //Retangulo p;
+            //p = new Retangulo();
+
+            //Console.WriteLine("Digite os dados de um retangulo: ");
+            //Console.WriteLine("Digite a altura: ");
+            //p.Altura = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite a largura: ");
+            //p.Largura = double.Parse(Console.ReadLine());
+
+            //Console.WriteLine();
+            //Console.WriteLine("Valor da área é de:  " + p.Area().ToString("F2", CultureInfo.InvariantCulture));
+            //Console.WriteLine("Valor do perimetro é de: " + p.Perimetro().ToString("F2", CultureInfo.InvariantCulture)); ;
+            //Console.WriteLine("O valor da diagonal é de:" + p.Diagonal().ToString("F2", CultureInfo.InvariantCulture));
+
+            //DadosFuncionario p;
+            //p = new DadosFuncionario();
+
+            //Console.WriteLine("Digite os dados do funcionário: ");
+            //Console.WriteLine("Nome: ");
+            //p.Nome = Console.ReadLine();
+            //Console.WriteLine("Salario Base: ");
+            //p.SalarioBruto = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite o valor do imposto referente ao Funcionário: ");
+            //p.Imposto = double.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Dados do Funcionário: " + p);
+            //Console.WriteLine();
+
+            //Console.WriteLine("Digite a porcentagem para aumentar o salario: ");
+            //double porcentagem = int.Parse(Console.ReadLine());
+            //p.AumentarSalario(porcentagem);
+
+            //Console.WriteLine("Dados atualizados do funcionário: " + p);
+
+            Aluno p;
+            p = new Aluno();
+
+            Console.WriteLine("Digite os dados do aluno para saber se o mesmo foi APROVADO ou REPROVADO.");
+            Console.WriteLine("Nome aluno: ");
+            p.Nome = Console.ReadLine();
+            Console.WriteLine("Digite a Nota  do Primeiro trimestre do aluno: ");
+            p.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Digite a Nota  do Segundo trimestre do aluno: ");
+            p.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Digite a Nota  do Terceiro trimestre do aluno: ");
+            p.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.WriteLine("A nota final do Aluno é: " + p.NotaFinal().ToString("F2", CultureInfo.InvariantCulture));
+
+            if (p.AprovaAluno())
+            {
+                Console.WriteLine("Aluno foi Aprovado !!! ");
+            }
+            else 
+            {
+                Console.WriteLine("Aluno reprovado");
+                Console.WriteLine("Faltaram: " + p.NotaRestante().ToString("F2", CultureInfo.InvariantCulture) + " pontos");
+            }
+
+
             Console.ReadKey();
         }
     }
