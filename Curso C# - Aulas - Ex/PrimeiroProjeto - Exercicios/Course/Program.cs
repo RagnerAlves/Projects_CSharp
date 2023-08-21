@@ -564,35 +564,60 @@ namespace Course
 
             //Console.WriteLine("Salario medio é de: " + mediaSalario.ToString("F4", CultureInfo.InvariantCulture));
 
-            Triangulo x, y;
-            x = new Triangulo();
-            y = new Triangulo();
+            //Triangulo x, y;
+            //x = new Triangulo();
+            //y = new Triangulo();
 
-            Console.WriteLine("Digite as medidas do triangulo X: ");
-            x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Digite as medidas do triangulo X: ");
+            //x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.WriteLine("Digite as medidas do triangulo Y: ");
-            y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Digite as medidas do triangulo Y: ");
+            //y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double areaX = x.Area();
-            
-            double areaY = y.Area();
+            //double areaX = x.Area();
 
-            Console.WriteLine("Valor da área de X: " + areaX.ToString("F4", CultureInfo.InvariantCulture));
-            Console.WriteLine("Valor da área de Y: " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+            //double areaY = y.Area();
 
-            if (areaX > areaY)
-            {
-                Console.WriteLine("A maior area é a área X");
-            }
-            else
-            {
-                Console.WriteLine("A maior área é a área Y");
-            }
+            //Console.WriteLine("Valor da área de X: " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+            //Console.WriteLine("Valor da área de Y: " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+
+            //if (areaX > areaY)
+            //{
+            //    Console.WriteLine("A maior area é a área X");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("A maior área é a área Y");
+            //}
+
+            //Produto p;
+            //p = new Produto();
+
+            //Console.WriteLine("Digite os dados do produto em estoque: ");
+            //Console.Write("Nome: ");
+            //p.Nome = Console.ReadLine();
+            //Console.Write("Preço: ");
+            //p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.Write("Quantidade no estoque: ");
+            //p.Quantidade = double.Parse(Console.ReadLine());
+
+            //Console.WriteLine();
+            //Console.WriteLine("Dados do produto: " + p);
+            //Console.WriteLine();
+
+            //Console.WriteLine("Digite o número de produtos a serem adicionado ao estoque: ");
+            //int qte = int.Parse(Console.ReadLine());
+            //p.AdicionarProdutos(qte);
+            //Console.WriteLine("Dados atualizados: " + p);
+
+            //Console.WriteLine();
+            //Console.WriteLine("Digite o número de produtos a serem removidos do estoque: ");
+            //qte = int.Parse(Console.ReadLine());
+            //p.RemoverProdutos(qte);
 
             Console.ReadKey();
         }
