@@ -8,7 +8,7 @@ namespace Course
         
 
         static void Main(string[] args)
-        {   
+        {
             //string frase = Console.ReadLine();
             //string x = Console.ReadLine();
             //string y = Console.ReadLine();
@@ -681,19 +681,29 @@ namespace Course
             //}
 
             //Calculadora calc = new Calculadora();
-            
-            Console.WriteLine("Digite o valor do raio: ");
-            double raio = double.Parse(Console.ReadLine());
 
-            double cir = Calculadora.Circunferencia(raio);
-            double volume = Calculadora.Volume(raio);
+            //Console.WriteLine("Digite o valor do raio: ");
+            //double raio = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("O valor da circunferência é: " + cir.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("O valor do volume é: " + volume.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("O valor de PI é: " + Calculadora.Pi.ToString("F2", CultureInfo.InvariantCulture));
+            //double cir = Calculadora.Circunferencia(raio);
+            //double volume = Calculadora.Volume(raio);
 
-       
+            //Console.WriteLine("O valor da circunferência é: " + cir.ToString("F2", CultureInfo.InvariantCulture));
+            //Console.WriteLine("O valor do volume é: " + volume.ToString("F2", CultureInfo.InvariantCulture));
+            //Console.WriteLine("O valor de PI é: " + Calculadora.Pi.ToString("F2", CultureInfo.InvariantCulture));
 
+
+            Cotacao dolar = new Cotacao();
+
+            Console.WriteLine("Digite a cotação do dolar: ");
+            double cotacao = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.WriteLine("Digite a quantia em dolares que irá comprar: ");
+            double quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double conversao = Cotacao.Conversao(quantia, cotacao);
+
+            Console.WriteLine("O valor a ser pago em reais é: " + conversao.ToString("F4", CultureInfo.InvariantCulture));
 
             Console.ReadKey();
         }
