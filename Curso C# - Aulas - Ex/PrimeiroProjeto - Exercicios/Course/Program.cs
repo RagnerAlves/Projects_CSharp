@@ -5,8 +5,10 @@ namespace Course
 {
     internal class Program
     {
+        static double Pi = 3.14;
+
         static void Main(string[] args)
-        {
+        {   
             //string frase = Console.ReadLine();
             //string x = Console.ReadLine();
             //string y = Console.ReadLine();
@@ -653,29 +655,50 @@ namespace Course
 
             //Console.WriteLine("Dados atualizados do funcionário: " + p);
 
-            Aluno p;
-            p = new Aluno();
+            //Aluno p;
+            //p = new Aluno();
 
-            Console.WriteLine("Digite os dados do aluno para saber se o mesmo foi APROVADO ou REPROVADO.");
-            Console.WriteLine("Nome aluno: ");
-            p.Nome = Console.ReadLine();
-            Console.WriteLine("Digite a Nota  do Primeiro trimestre do aluno: ");
-            p.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.WriteLine("Digite a Nota  do Segundo trimestre do aluno: ");
-            p.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.WriteLine("Digite a Nota  do Terceiro trimestre do aluno: ");
-            p.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Digite os dados do aluno para saber se o mesmo foi APROVADO ou REPROVADO.");
+            //Console.WriteLine("Nome aluno: ");
+            //p.Nome = Console.ReadLine();
+            //Console.WriteLine("Digite a Nota  do Primeiro trimestre do aluno: ");
+            //p.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Digite a Nota  do Segundo trimestre do aluno: ");
+            //p.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Digite a Nota  do Terceiro trimestre do aluno: ");
+            //p.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.WriteLine("A nota final do Aluno é: " + p.NotaFinal().ToString("F2", CultureInfo.InvariantCulture));
+            //Console.WriteLine("A nota final do Aluno é: " + p.NotaFinal().ToString("F2", CultureInfo.InvariantCulture));
 
-            if (p.AprovaAluno())
+            //if (p.AprovaAluno())
+            //{
+            //    Console.WriteLine("Aluno foi Aprovado !!! ");
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("Aluno reprovado");
+            //    Console.WriteLine("Faltaram: " + p.NotaRestante().ToString("F2", CultureInfo.InvariantCulture) + " pontos");
+            //}
+
+            
+            Console.WriteLine("Digite o valor do raio: ");
+            double raio = double.Parse(Console.ReadLine());
+
+            double cir = Circunferencia(raio);
+            double volume = Volume(raio);
+
+            Console.WriteLine("O valor da circunferência é: " + cir.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("O valor do volume é: " + volume.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("O valor de PI é: " + Pi.ToString("F2", CultureInfo.InvariantCulture));
+
+            static double Circunferencia(double raio)
             {
-                Console.WriteLine("Aluno foi Aprovado !!! ");
+                return 2.0 * Pi * raio;
             }
-            else 
+
+            static double Volume(double raio)
             {
-                Console.WriteLine("Aluno reprovado");
-                Console.WriteLine("Faltaram: " + p.NotaRestante().ToString("F2", CultureInfo.InvariantCulture) + " pontos");
+                return 4.0 / 3 * Pi * raio * raio * raio;
             }
 
 
