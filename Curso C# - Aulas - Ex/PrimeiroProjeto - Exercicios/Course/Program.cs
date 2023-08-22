@@ -5,7 +5,7 @@ namespace Course
 {
     internal class Program
     {
-        static double Pi = 3.14;
+        
 
         static void Main(string[] args)
         {   
@@ -680,26 +680,19 @@ namespace Course
             //    Console.WriteLine("Faltaram: " + p.NotaRestante().ToString("F2", CultureInfo.InvariantCulture) + " pontos");
             //}
 
+            //Calculadora calc = new Calculadora();
             
             Console.WriteLine("Digite o valor do raio: ");
             double raio = double.Parse(Console.ReadLine());
 
-            double cir = Circunferencia(raio);
-            double volume = Volume(raio);
+            double cir = Calculadora.Circunferencia(raio);
+            double volume = Calculadora.Volume(raio);
 
             Console.WriteLine("O valor da circunferência é: " + cir.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("O valor do volume é: " + volume.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("O valor de PI é: " + Pi.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("O valor de PI é: " + Calculadora.Pi.ToString("F2", CultureInfo.InvariantCulture));
 
-            static double Circunferencia(double raio)
-            {
-                return 2.0 * Pi * raio;
-            }
-
-            static double Volume(double raio)
-            {
-                return 4.0 / 3 * Pi * raio * raio * raio;
-            }
+       
 
 
             Console.ReadKey();
