@@ -693,17 +693,42 @@ namespace Course
             //Console.WriteLine("O valor de PI é: " + Calculadora.Pi.ToString("F2", CultureInfo.InvariantCulture));
 
 
-            Cotacao dolar = new Cotacao();
+            //Cotacao dolar = new Cotacao();
 
-            Console.WriteLine("Digite a cotação do dolar: ");
-            double cotacao = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Digite a cotação do dolar: ");
+            //double cotacao = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.WriteLine("Digite a quantia em dolares que irá comprar: ");
-            double quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //Console.WriteLine("Digite a quantia em dolares que irá comprar: ");
+            //double quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double conversao = Cotacao.Conversao(quantia, cotacao);
+            //double conversao = Cotacao.Conversao(quantia, cotacao);
 
-            Console.WriteLine("O valor a ser pago em reais é: " + conversao.ToString("F4", CultureInfo.InvariantCulture));
+            //Console.WriteLine("O valor a ser pago em reais é: " + conversao.ToString("F4", CultureInfo.InvariantCulture));
+
+            //ProdutoEstoque p;
+            //p = new ProdutoEstoque();
+
+            //Console.WriteLine("Digite os dados do produto para adicionar ou retirar do estoque.");
+            //Console.WriteLine("Nome: ");
+            //p.Nome = Console.ReadLine();
+            //Console.WriteLine("Preço do produtor: ");
+            //p.Preco = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite a quantidade do produto: ");
+            //p.Quantidade = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Dados do produto: " + p );
+
+            //Console.WriteLine();
+
+            //Console.WriteLine("Digite o número de produtos a serem adicionados ao estoque: ");
+            //int qnt = int.Parse(Console.ReadLine());
+            //p.AdicionarProdutos(qnt);
+
+            //Console.WriteLine("Dados do produto: " + p);
+
+            //Console.WriteLine();
+            //Console.WriteLine("Digite o número de produtos a serem removidos ao estoque: ");
+            //p.AdicionarProdutos(qnt);
 
             Console.ReadKey();
         }
