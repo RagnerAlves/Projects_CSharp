@@ -705,30 +705,30 @@ namespace Course
 
             //Console.WriteLine("O valor a ser pago em reais é: " + conversao.ToString("F4", CultureInfo.InvariantCulture));
 
-            //ProdutoEstoque p;
-            //p = new ProdutoEstoque();
+            
+            Console.WriteLine("Digite os dados do produto para adicionar ou retirar do estoque.");
+            Console.WriteLine("Nome: ");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Preço do produtor: ");
+            double preco = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a quantidade do produto: ");
+            int quantidade = int.Parse(Console.ReadLine());
 
-            //Console.WriteLine("Digite os dados do produto para adicionar ou retirar do estoque.");
-            //Console.WriteLine("Nome: ");
-            //p.Nome = Console.ReadLine();
-            //Console.WriteLine("Preço do produtor: ");
-            //p.Preco = double.Parse(Console.ReadLine());
-            //Console.WriteLine("Digite a quantidade do produto: ");
-            //p.Quantidade = int.Parse(Console.ReadLine());
+            ProdutoEstoque p = new(nome, preco, quantidade);
 
-            //Console.WriteLine("Dados do produto: " + p );
+            Console.WriteLine("Dados do produto: " + p);
 
-            //Console.WriteLine();
+            Console.WriteLine();
 
-            //Console.WriteLine("Digite o número de produtos a serem adicionados ao estoque: ");
-            //int qnt = int.Parse(Console.ReadLine());
-            //p.AdicionarProdutos(qnt);
+            Console.WriteLine("Digite o número de produtos a serem adicionados ao estoque: ");
+            int qnt = int.Parse(Console.ReadLine());
+            p.AdicionarProdutos(qnt);
 
-            //Console.WriteLine("Dados do produto: " + p);
+            Console.WriteLine("Dados do produto: " + p);
 
-            //Console.WriteLine();
-            //Console.WriteLine("Digite o número de produtos a serem removidos ao estoque: ");
-            //p.AdicionarProdutos(qnt);
+            Console.WriteLine();
+            Console.WriteLine("Digite o número de produtos a serem removidos ao estoque: ");
+            p.AdicionarProdutos(qnt);
 
             Console.ReadKey();
         }
