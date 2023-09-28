@@ -707,11 +707,11 @@ namespace Course
 
             
             Console.WriteLine("Digite os dados do produto para adicionar ou retirar do estoque.");
-            Console.WriteLine("Nome: ");
+            Console.Write("Nome: ");
             string nome = Console.ReadLine();
-            Console.WriteLine("Preço do produtor: ");
+            Console.Write("Preço do produtor: ");
             double preco = double.Parse(Console.ReadLine());
-            Console.WriteLine("Digite a quantidade do produto: ");
+            Console.Write("Digite a quantidade do produto: ");
             int quantidade = int.Parse(Console.ReadLine());
 
             ProdutoEstoque p = new(nome, preco, quantidade);
@@ -719,16 +719,20 @@ namespace Course
             Console.WriteLine("Dados do produto: " + p);
 
             Console.WriteLine();
+            Console.Write("Digite o número de produtos a ser adicionados ao estoque: ");
+            int qte = int.Parse(Console.ReadLine());
+            p.AdicionarProdutos(qte);
+            Console.WriteLine();
 
-            Console.WriteLine("Digite o número de produtos a serem adicionados ao estoque: ");
-            int qnt = int.Parse(Console.ReadLine());
-            p.AdicionarProdutos(qnt);
-
-            Console.WriteLine("Dados do produto: " + p);
+            Console.WriteLine("Dados atualizados: " + p);
 
             Console.WriteLine();
-            Console.WriteLine("Digite o número de produtos a serem removidos ao estoque: ");
-            p.AdicionarProdutos(qnt);
+            Console.Write("Digite o número de produtos a ser removidos do estoque: ");
+            qte = int.Parse(Console.ReadLine());
+            p.RemoverProdutos(qte);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + p);            
 
             Console.ReadKey();
         }
