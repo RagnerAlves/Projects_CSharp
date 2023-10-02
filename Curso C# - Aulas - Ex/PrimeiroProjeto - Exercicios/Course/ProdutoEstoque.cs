@@ -5,15 +5,33 @@ namespace Course
     internal class ProdutoEstoque
     {
 
-        public string? Nome;
-        public double Preco;
-        public int Quantidade;
+        private string? _nome;
+        public double Preco { get; private set; }
+        private int Quantidade { get; set; }
 
         public ProdutoEstoque( string? nome, double preco, int quantidade)
         {
-            Nome = nome;
+            _nome = nome;
             Preco = preco;
             Quantidade = quantidade;
+        }
+        public ProdutoEstoque(string? nome, double preco)
+        {
+            _nome = nome;
+            Preco = preco;
+            Quantidade = 0;
+        }
+
+        public string Nome
+        {
+            get { return _nome; }
+            set
+            {
+                if (value != null && value.Length > 1)
+                {
+                    _nome = value;
+                }
+            }
         }
 
         public double ValorTotalEmEstoque()
