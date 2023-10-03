@@ -705,34 +705,67 @@ namespace Course
 
             //Console.WriteLine("O valor a ser pago em reais é: " + conversao.ToString("F4", CultureInfo.InvariantCulture));
 
-            
-            Console.WriteLine("Digite os dados do produto para adicionar ou retirar do estoque.");
-            Console.Write("Nome: ");
+
+            //Console.WriteLine("Digite os dados do produto para adicionar ou retirar do estoque.");
+            //Console.Write("Nome: ");
+            //string nome = Console.ReadLine();
+            //Console.Write("Preço do produtor: ");
+            //double preco = double.Parse(Console.ReadLine());
+            //Console.Write("Digite a quantidade do produto: ");
+            //int quantidade = int.Parse(Console.ReadLine());
+
+            //ProdutoEstoque p = new(nome, preco, quantidade);
+
+            //Console.WriteLine("Dados do produto: " + p);
+
+            //Console.WriteLine();
+            //Console.Write("Digite o número de produtos a ser adicionados ao estoque: ");
+            //int qte = int.Parse(Console.ReadLine());
+            //p.AdicionarProdutos(qte);
+            //Console.WriteLine();
+
+            //Console.WriteLine("Dados atualizados: " + p);
+
+            //Console.WriteLine();
+            //Console.Write("Digite o número de produtos a ser removidos do estoque: ");
+            //qte = int.Parse(Console.ReadLine());
+            //p.RemoverProdutos(qte);
+
+            //Console.WriteLine();
+            //Console.WriteLine("Dados atualizados: " + p);            
+
+            ContaBancaria conta;
+
+            Console.Write("Informar os dados para cadastrar uma conta bancária: ");
+            Console.Write("Favor informar o número da conta: ");
+            int numero = int.Parse(Console.ReadLine());
+            Console.Write("Digite o nome do titular da conta: ");
             string nome = Console.ReadLine();
-            Console.Write("Preço do produtor: ");
-            double preco = double.Parse(Console.ReadLine());
-            Console.Write("Digite a quantidade do produto: ");
-            int quantidade = int.Parse(Console.ReadLine());
+            Console.Write("Deseja fazer um depósito inicial ? (s/n) ");
+            char resp = char.Parse(Console.ReadLine());
 
-            ProdutoEstoque p = new(nome, preco, quantidade);
+            if(resp == 's' || resp == 'S')
+            {
+                Console.WriteLine("Digite o valor do depósito inicial: ");
+                double depositoInicial = double.Parse(Console.ReadLine());
+                conta = new ContaBancaria(nome, numero, depositoInicial);
+            }
+            else
+            {
+                conta = new ContaBancaria(nome, numero);
+            }
 
-            Console.WriteLine("Dados do produto: " + p);
+            Console.WriteLine("Dados atualizados: " + conta);
 
-            Console.WriteLine();
-            Console.Write("Digite o número de produtos a ser adicionados ao estoque: ");
-            int qte = int.Parse(Console.ReadLine());
-            p.AdicionarProdutos(qte);
-            Console.WriteLine();
+            Console.WriteLine("Entre com valor de depósito para conta: ");
+            double deposito = double.Parse(Console.ReadLine());
+            conta.Deposito(deposito);
 
-            Console.WriteLine("Dados atualizados: " + p);
+            Console.WriteLine("Dados atualizados: " + conta);
 
-            Console.WriteLine();
-            Console.Write("Digite o número de produtos a ser removidos do estoque: ");
-            qte = int.Parse(Console.ReadLine());
-            p.RemoverProdutos(qte);
-
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);            
+            Console.WriteLine("Entre com valor de saque para conta: ");
+            double saque = double.Parse(Console.ReadLine());
+            conta.SaqueSaldo(saque);
 
             Console.ReadKey();
         }
