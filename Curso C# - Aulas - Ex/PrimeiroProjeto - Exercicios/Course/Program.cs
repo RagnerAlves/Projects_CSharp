@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Runtime.CompilerServices;
 
 namespace Course
 {
@@ -734,38 +735,125 @@ namespace Course
             //Console.WriteLine();
             //Console.WriteLine("Dados atualizados: " + p);            
 
-            ContaBancaria conta;
+            //ContaBancaria conta;
 
-            Console.Write("Informar os dados para cadastrar uma conta bancária: ");
-            Console.Write("Favor informar o número da conta: ");
-            int numero = int.Parse(Console.ReadLine());
-            Console.Write("Digite o nome do titular da conta: ");
-            string nome = Console.ReadLine();
-            Console.Write("Deseja fazer um depósito inicial ? (s/n) ");
-            char resp = char.Parse(Console.ReadLine());
+            //Console.Write("Informar os dados para cadastrar uma conta bancária: ");
+            //Console.Write("Favor informar o número da conta: ");
+            //int numero = int.Parse(Console.ReadLine());
+            //Console.Write("Digite o nome do titular da conta: ");
+            //string nome = Console.ReadLine();
+            //Console.Write("Deseja fazer um depósito inicial ? (s/n) ");
+            //char resp = char.Parse(Console.ReadLine());
 
-            if(resp == 's' || resp == 'S')
+            //if(resp == 's' || resp == 'S')
+            //{
+            //    Console.WriteLine("Digite o valor do depósito inicial: ");
+            //    double depositoInicial = double.Parse(Console.ReadLine());
+            //    conta = new ContaBancaria(nome, numero, depositoInicial);
+            //}
+            //else
+            //{
+            //    conta = new ContaBancaria(nome, numero);
+            //}
+
+            //Console.WriteLine("Dados atualizados: " + conta);
+
+            //Console.WriteLine("Entre com valor de depósito para conta: ");
+            //double deposito = double.Parse(Console.ReadLine());
+            //conta.Deposito(deposito);
+
+            //Console.WriteLine("Dados atualizados: " + conta);
+
+            //Console.WriteLine("Entre com valor de saque para conta: ");
+            //double saque = double.Parse(Console.ReadLine());
+            //conta.SaqueSaldo(saque);
+
+            //double? x = null;
+
+
+
+            //int n = int.Parse(Console.ReadLine());
+
+            //double[] vect = new double[n];
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    vect[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //}
+
+            //double soma = 0.0;
+            //for (int i = 0;i < n;i++)
+            //{
+            //    soma += vect[i];
+            //}
+
+            //double avg = soma / n;
+            ////Console.WriteLine("A media de autura é: " + avg.ToString("F2", CultureInfo.InvariantCulture));
+
+            //Estudante[] vect = new Estudante[10];
+
+            //Console.WriteLine("Quantoss quartos seram alugados ?");
+            //int n = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i < n; i++)
+            //{
+            //    Console.WriteLine();
+            //    Console.WriteLine($"Aluguel #{i}: ");
+            //    Console.Write("Digite o nome do Estudante: ");
+            //    string nome = Console.ReadLine();
+            //    Console.WriteLine("Digite o e-mail: ");
+            //    string email = Console.ReadLine();
+            //    Console.WriteLine("Digite o nº do quarto de 0 a 9: ");
+            //    int quarto = int.Parse(Console.ReadLine());
+            //    vect[quarto] = new Estudante(nome, email);
+            //    if (quarto != 0)
+            //    {
+            //        Console.WriteLine("Quarto escolhido esttá ocupado.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Quarto escolhido está ocupado.");
+            //    }
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("Quartos ocupados: ");
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    if(vect[i] != null )
+            //    {
+            //        Console.WriteLine(i + ": " + vect[i]);
+            //    }    
+
+            //}
+
+            Estudante[] vect = new Estudante[10];
+
+            Console.WriteLine("Quantos quartos seram alugados ? ");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine("Digite o valor do depósito inicial: ");
-                double depositoInicial = double.Parse(Console.ReadLine());
-                conta = new ContaBancaria(nome, numero, depositoInicial);
+                Console.WriteLine();
+                Console.WriteLine($"Aluguel: #{i}$");
+                Console.WriteLine("Digite o nome do Estudante: ");
+                string nome = Console.ReadLine();
+                Console.WriteLine("Digite o e-mail para cadastro: ");
+                string email = Console.ReadLine();
+                Console.WriteLine("Digite o número do quarto.");
+                int quarto = int.Parse(Console.ReadLine());
+                vect[quarto] = new Estudante(nome, email);
             }
-            else
+            
+            Console.WriteLine();
+            Console.WriteLine("Quartos ocupados.");
+            for (int i = 0; i < 10; i++)
             {
-                conta = new ContaBancaria(nome, numero);
+                if (vect[i] != null)
+                {
+                    Console.WriteLine(i +": " + vect[i]);
+                }
             }
 
-            Console.WriteLine("Dados atualizados: " + conta);
-
-            Console.WriteLine("Entre com valor de depósito para conta: ");
-            double deposito = double.Parse(Console.ReadLine());
-            conta.Deposito(deposito);
-
-            Console.WriteLine("Dados atualizados: " + conta);
-
-            Console.WriteLine("Entre com valor de saque para conta: ");
-            double saque = double.Parse(Console.ReadLine());
-            conta.SaqueSaldo(saque);
 
             Console.ReadKey();
         }
