@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.CompilerServices;
 
@@ -6,7 +7,7 @@ namespace Course
 {
     internal class Program
     {
-        
+
 
         static void Main(string[] args)
         {
@@ -826,34 +827,99 @@ namespace Course
 
             //}
 
-            Estudante[] vect = new Estudante[10];
+            //Estudante[] vect = new Estudante[10];
 
-            Console.WriteLine("Quantos quartos seram alugados ? ");
-            int n = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Quantos quartos seram alugados ? ");
+            //int n = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= n; i++)
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    Console.WriteLine();
+            //    Console.WriteLine($"Aluguel: #{i}$");
+            //    Console.WriteLine("Digite o nome do Estudante: ");
+            //    string nome = Console.ReadLine();
+            //    Console.WriteLine("Digite o e-mail para cadastro: ");
+            //    string email = Console.ReadLine();
+            //    Console.WriteLine("Digite o número do quarto.");
+            //    int quarto = int.Parse(Console.ReadLine());
+            //    vect[quarto] = new Estudante(nome, email);
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("Quartos ocupados.");
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    if (vect[i] != null)
+            //    {
+            //        Console.WriteLine(i +": " + vect[i]);
+            //    }
+            //}
+
+            //string[] vect = new string[] { "Maria, Alex, Bob"};
+
+            //for (int i = 0; i < vect.Length; i++)
+            //{
+            //    Console.WriteLine(vect[i]);
+            //}
+
+            //Console.WriteLine("------------");
+
+            //foreach (string obj in vect)
+            //{
+            //    Console.WriteLine(obj);
+            //}
+
+            //List<string> list = new List<string>();
+
+            //List<string> list2 = new List<string>() {"maria, Alex, Bob" };
+
+            List<string> list = new List<string>();
+
+            list.Add("Maria");
+            list.Add("Alex");
+            list.Add("Bob");
+            list.Add("Anna");
+            list.Insert(2, "Marco");
+
+            foreach (string obj in list)
             {
-                Console.WriteLine();
-                Console.WriteLine($"Aluguel: #{i}$");
-                Console.WriteLine("Digite o nome do Estudante: ");
-                string nome = Console.ReadLine();
-                Console.WriteLine("Digite o e-mail para cadastro: ");
-                string email = Console.ReadLine();
-                Console.WriteLine("Digite o número do quarto.");
-                int quarto = int.Parse(Console.ReadLine());
-                vect[quarto] = new Estudante(nome, email);
-            }
-            
-            Console.WriteLine();
-            Console.WriteLine("Quartos ocupados.");
-            for (int i = 0; i < 10; i++)
-            {
-                if (vect[i] != null)
-                {
-                    Console.WriteLine(i +": " + vect[i]);
-                }
+                Console.WriteLine(obj);
             }
 
+            Console.WriteLine("List count: " + list.Count);
+
+            string? s1 = list.Find(x => x[0] == 'A');
+            Console.WriteLine("First A: " + s1);
+
+            string? s2 = list.FindLast(x => x[0] == 'A');
+            Console.WriteLine("Last A: " + s2);
+
+            int? pos1 = list.FindIndex(x => x[0] == 'A');
+            Console.WriteLine("First position 'A': " + pos1);
+
+            int pos2 = list.FindLastIndex(x => x[0] == 'A');
+            Console.WriteLine("Last 'A' : " + pos2);
+
+            List<string> list2 = list.FindAll(x => x.Length == 5);
+            Console.WriteLine("-------------");
+            foreach (string obj in list2)
+            {
+                Console.WriteLine(obj);
+            }
+
+            list.Remove("Alex");
+            Console.WriteLine("---------");
+            foreach(string obj in list)
+            {
+                Console.WriteLine(obj);
+            }
+
+            list.RemoveAll(x => x[0] == 'M');
+            Console.WriteLine("--------");
+            foreach (string obj in list)
+            {
+                Console.WriteLine(obj);
+            }
 
             Console.ReadKey();
         }
