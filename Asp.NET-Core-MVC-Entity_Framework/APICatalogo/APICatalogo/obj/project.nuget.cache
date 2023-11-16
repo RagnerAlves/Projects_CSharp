@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RtBajW9ohAiwnSKi+iLUZiUynAoks8eO6R71ZR+gpImCt/zTlk/08KL2E+/IQjOm7UMHK2M09XxPQ8tjNy7zTw==",
+  "dgSpecHash": "vCUoWnd25qqX7dJ9mDyME321WJfzLwF6vQnkdkae47xNDHCycpsq7EZt0lfzADIrg8kBefxuZsRZCwvPKpH2ew==",
   "success": true,
   "projectFilePath": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\ragne\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.0\\microsoft.entityframeworkcore.analyzers.8.0.0.nupkg.sha512",
     "C:\\Users\\ragne\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.0\\microsoft.entityframeworkcore.design.8.0.0.nupkg.sha512",
     "C:\\Users\\ragne\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.0\\microsoft.entityframeworkcore.relational.8.0.0.nupkg.sha512",
+    "C:\\Users\\ragne\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.0\\microsoft.entityframeworkcore.tools.8.0.0.nupkg.sha512",
     "C:\\Users\\ragne\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\ragne\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\ragne\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
