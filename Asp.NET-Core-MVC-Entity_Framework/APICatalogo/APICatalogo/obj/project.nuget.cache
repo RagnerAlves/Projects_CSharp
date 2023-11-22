@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4389R/cCrIumjNZcoZmJ1/HpKeJ7IzBjyENsKgzdCSd3HloGK5UWDk7IoStv4QaoJi/FRyKSEwHa3XppkqKH5A==",
+  "dgSpecHash": "6JvHKHI26coGRyAnP4ZhzFKJ7+A21smvXavGw6l+Ez+NDP3zCJ7LgLZwHM+MHBL68SWM2DxdwxqVj4VNaG5o2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+  "projectFilePath": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\apicatalogo\\APICatalogo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ragne\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ragne\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",

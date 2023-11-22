@@ -20,7 +20,7 @@ namespace APICatalogo.Migrations
 
             migrationBuilder.RenameTable(
                 name: "Categorias",
-                newName: "Categoria");
+                newName: "Categorias");
 
             migrationBuilder.AlterColumn<decimal>(
                 name: "Preco",
@@ -88,7 +88,7 @@ namespace APICatalogo.Migrations
                 .OldAnnotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.UpdateData(
-                table: "Categoria",
+                table: "Categorias",
                 keyColumn: "Nome",
                 keyValue: null,
                 column: "Nome",
@@ -96,7 +96,7 @@ namespace APICatalogo.Migrations
 
             migrationBuilder.AlterColumn<string>(
                 name: "Nome",
-                table: "Categoria",
+                table: "Categorias",
                 type: "varchar(80)",
                 maxLength: 80,
                 nullable: false,
@@ -107,7 +107,7 @@ namespace APICatalogo.Migrations
                 .OldAnnotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.UpdateData(
-                table: "Categoria",
+                table: "Categorias",
                 keyColumn: "ImagemUrl",
                 keyValue: null,
                 column: "ImagemUrl",
@@ -115,7 +115,7 @@ namespace APICatalogo.Migrations
 
             migrationBuilder.AlterColumn<string>(
                 name: "ImagemUrl",
-                table: "Categoria",
+                table: "Categorias",
                 type: "varchar(300)",
                 maxLength: 300,
                 nullable: false,
@@ -127,14 +127,14 @@ namespace APICatalogo.Migrations
 
             migrationBuilder.AddPrimaryKey(
                 name: "PK_Categoria",
-                table: "Categoria",
+                table: "Categorias",
                 column: "CategoriaID");
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Produtos_Categoria_CategoriaId",
                 table: "Produtos",
                 column: "CategoriaId",
-                principalTable: "Categoria",
+                principalTable: "Categorias",
                 principalColumn: "CategoriaID",
                 onDelete: ReferentialAction.Cascade);
         }
@@ -148,10 +148,10 @@ namespace APICatalogo.Migrations
 
             migrationBuilder.DropPrimaryKey(
                 name: "PK_Categoria",
-                table: "Categoria");
+                table: "Categorias");
 
             migrationBuilder.RenameTable(
-                name: "Categoria",
+                name: "Categorias",
                 newName: "Categorias");
 
             migrationBuilder.AlterColumn<decimal>(

@@ -22,7 +22,7 @@ namespace APICatalogo.Migrations
                 .HasAnnotation("ProductVersion", "7.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("APICatalogo.Models.Categoria", b =>
+            modelBuilder.Entity("APICatalogo.Models.Categorias", b =>
                 {
                     b.Property<int>("CategoriaID")
                         .ValueGeneratedOnAdd()
@@ -40,7 +40,7 @@ namespace APICatalogo.Migrations
 
                     b.HasKey("CategoriaID");
 
-                    b.ToTable("Categoria");
+                    b.ToTable("Categorias");
                 });
 
             modelBuilder.Entity("APICatalogo.Models.Produto", b =>
@@ -85,16 +85,16 @@ namespace APICatalogo.Migrations
 
             modelBuilder.Entity("APICatalogo.Models.Produto", b =>
                 {
-                    b.HasOne("APICatalogo.Models.Categoria", "Categoria")
+                    b.HasOne("APICatalogo.Models.Categorias", "Categorias")
                         .WithMany("Produtos")
                         .HasForeignKey("CategoriaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Categoria");
+                    b.Navigation("Categorias");
                 });
 
-            modelBuilder.Entity("APICatalogo.Models.Categoria", b =>
+            modelBuilder.Entity("APICatalogo.Models.Categorias", b =>
                 {
                     b.Navigation("Produtos");
                 });
