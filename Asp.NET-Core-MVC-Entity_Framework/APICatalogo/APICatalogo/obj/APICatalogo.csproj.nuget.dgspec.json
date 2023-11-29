@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\apicatalogo\\APICatalogo.csproj": {}
+    "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\apicatalogo\\APICatalogo.csproj": {
+    "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\apicatalogo\\APICatalogo.csproj",
+        "projectUniqueName": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "projectName": "APICatalogo",
-        "projectPath": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\apicatalogo\\APICatalogo.csproj",
+        "projectPath": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "packagesPath": "C:\\Users\\ragne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\apicatalogo\\obj\\",
+        "outputPath": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
