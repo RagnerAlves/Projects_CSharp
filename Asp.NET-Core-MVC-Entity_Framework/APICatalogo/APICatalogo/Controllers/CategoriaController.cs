@@ -21,28 +21,45 @@ namespace APICatalogo.Controllers
 
         public ActionResult<IEnumerable<Categoria>> GetCategoriasProdutos()
         {
-            return _context.Categorias.Include(p => p.Produtos).ToList();
+            //return _context.Categorias.Include(p => p.Produtos).ToList();
+            return _context.Categorias.Include(p => p.Produtos).Where(c => c.CategoriaID <= 5).ToList();
         }
 
         [HttpGet]
-        
+
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            return _context.Categorias.ToList();
+            try
+            {
+                return _context.Categorias.AsNoTracking().ToList();
+            }
+            catch
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um problema ao tratar a sua situação.");
+            }
         }
 
         [HttpGet("{id:int}", Name = "ObterCategoria")]
 
         public ActionResult<Categoria> Get(int id)
         {
-            var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaID == id);
-
-            if(categoria == null)
+            try
             {
-                return NotFound("Categoria não encontrada.");
-            }
+                var categoria = _context.Categorias.AsNoTracking().FirstOrDefault(p => p.CategoriaID == id);
 
-            return Ok(categoria);
+                if (categoria == null)
+                {
+                    return NotFound("Categoria não encontrada.");
+                }
+
+                return Ok(categoria);
+            }
+            catch
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um problema ao tratar a sua situação.");
+            }
         }
 
 
@@ -55,7 +72,7 @@ namespace APICatalogo.Controllers
             _context.Produtos?.Add(categoria);
             _context.SaveChanges();
 
-            return new CreatedAtRouteResult("ObterCategoria", 
+            return new CreatedAtRouteResult("ObterCategoria",
                 new { id = categoria.ProdutoId }, categoria);
         }
 
