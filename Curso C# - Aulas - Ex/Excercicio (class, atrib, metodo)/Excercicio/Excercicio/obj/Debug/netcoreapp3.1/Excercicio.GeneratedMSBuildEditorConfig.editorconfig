@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = Excercicio
-build_property.ProjectDir = C:\Users\a844147\OneDrive - Atos\Documents\Projects_CSharp_MVC\Curso C# - Aulas - Ex\Excercicio (class, atrib, metodo)\Excercicio\Excercicio\
+build_property.ProjectDir = C:\Users\ragne\Documents\RagnerAlves\Projects_CSharp\Curso C# - Aulas - Ex\Excercicio (class, atrib, metodo)\Excercicio\Excercicio\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
