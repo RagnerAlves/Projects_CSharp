@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {}
+    "C:\\Projects_CSharp\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {
+    "C:\\Projects_CSharp\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+        "projectUniqueName": "C:\\Projects_CSharp\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "projectName": "APICatalogo",
-        "projectPath": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+        "projectPath": "C:\\Projects_CSharp\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "packagesPath": "C:\\Users\\ragne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ragne\\Documents\\Projects_CSharp_MVC\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\obj\\",
+        "outputPath": "C:\\Projects_CSharp\\Asp.NET-Core-MVC-Entity_Framework\\APICatalogo\\APICatalogo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -80,6 +86,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -88,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
