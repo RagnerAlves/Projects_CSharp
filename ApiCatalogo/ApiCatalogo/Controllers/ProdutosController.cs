@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApiCatalogo.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ProdutosController : ControllerBase
     {
@@ -14,6 +14,17 @@ namespace ApiCatalogo.Controllers
         public ProdutosController(AppDbContext contex) 
         {
             _context = contex;
+        }
+
+        [HttpGet("primeiro")]
+        public ActionResult<Produto> GetPrimeiro()
+        {
+            var produto = _context?.Produtos?.FirstOrDefault();
+            if (produto is null)
+            {
+                return NotFound();
+            }
+            return produto;
         }
 
         [HttpGet]
@@ -27,9 +38,11 @@ namespace ApiCatalogo.Controllers
             return produtos;
         }
 
-        [HttpGet("{id:int}", Name="ObterProduto")]
-        public ActionResult<Produto> Get(int id)
+        [HttpGet("{id}/{param2}", Name="ObterProduto")]
+        public ActionResult<Produto> Get(int id, string param2)
         {
+            var parametro = param2;
+
             var produto = _context?.Produtos?.AsNoTracking().FirstOrDefault(p => p.ProdutoId == id);
             if (produto is null)
             {
