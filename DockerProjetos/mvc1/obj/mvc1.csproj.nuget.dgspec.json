@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects_CSharp\\ApiCatalogo\\ApiCatalogo\\ApiCatalogo.csproj": {}
+    "C:\\Projects_CSharp\\DockerProjetos\\mvc1\\mvc1.csproj": {}
   },
   "projects": {
-    "C:\\Projects_CSharp\\ApiCatalogo\\ApiCatalogo\\ApiCatalogo.csproj": {
+    "C:\\Projects_CSharp\\DockerProjetos\\mvc1\\mvc1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects_CSharp\\ApiCatalogo\\ApiCatalogo\\ApiCatalogo.csproj",
-        "projectName": "ApiCatalogo",
-        "projectPath": "C:\\Projects_CSharp\\ApiCatalogo\\ApiCatalogo\\ApiCatalogo.csproj",
+        "projectUniqueName": "C:\\Projects_CSharp\\DockerProjetos\\mvc1\\mvc1.csproj",
+        "projectName": "mvc1",
+        "projectPath": "C:\\Projects_CSharp\\DockerProjetos\\mvc1\\mvc1.csproj",
         "packagesPath": "C:\\Users\\ragne\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects_CSharp\\ApiCatalogo\\ApiCatalogo\\obj\\",
+        "outputPath": "C:\\Projects_CSharp\\DockerProjetos\\mvc1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ragne\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,26 +45,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[8.0.0-beta.2, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.8.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -84,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

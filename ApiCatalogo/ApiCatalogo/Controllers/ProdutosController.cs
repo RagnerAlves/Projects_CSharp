@@ -27,6 +27,13 @@ namespace ApiCatalogo.Controllers
             return produto;
         }
 
+        //api/produtos
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Produto>>> Get2Async()
+        {
+            return await _context?.Produtos.AsNoTracking().ToListAsync();
+        }
+
         [HttpGet]
         public ActionResult<IEnumerable<Produto>> Get() 
         {
@@ -39,11 +46,12 @@ namespace ApiCatalogo.Controllers
         }
 
         [HttpGet("{id}/{param2}", Name="ObterProduto")]
-        public ActionResult<Produto> Get(int id, string param2)
+        public async Task<ActionResult<Produto>> Get(int id, string param2)
         {
             var parametro = param2;
 
-            var produto = _context?.Produtos?.AsNoTracking().FirstOrDefault(p => p.ProdutoId == id);
+            var produto = await _context?.Produtos?.AsNoTracking()
+                .FirstOrDefaultAsync(p => p.ProdutoId == id);
             if (produto is null)
             {
                 return NotFound("Produto não encontrado ! ");
