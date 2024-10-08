@@ -1,6 +1,7 @@
 ﻿using ApiCatalogo.Context;
 using ApiCatalogo.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiCatalogo.Controllers
@@ -45,10 +46,10 @@ namespace ApiCatalogo.Controllers
             return produtos;
         }
 
-        [HttpGet("{id}/{param2}", Name="ObterProduto")]
-        public async Task<ActionResult<Produto>> Get(int id, string param2)
+        [HttpGet("{id}", Name="ObterProduto")]
+        public async Task<ActionResult<Produto>> Get([FromQuery] int id)
         {
-            var parametro = param2;
+            //var parametro = param2;
 
             var produto = await _context?.Produtos?.AsNoTracking()
                 .FirstOrDefaultAsync(p => p.ProdutoId == id);
