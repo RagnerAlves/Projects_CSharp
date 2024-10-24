@@ -1,9 +1,11 @@
 ﻿using Funcionario_WebApi.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace Funcionario_WebApi.Models;
 
 public class FuncionarioModel
 {
+    [Key]
     public int Id { get; set; }
     public string? Nome { get; set; }
     public string? Sobrenome { get; set; }
